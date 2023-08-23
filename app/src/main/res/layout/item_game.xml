@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/iconImg"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/iconImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/gameNameTv"
+        android:textSize="16sp"
+        android:tag="Black"
+        android:text="1:45:57"
+        android:textColor="#0A0A0A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/douyinImg"
+        android:src="@drawable/douyin"
+        app:layout_constraintEnd_toStartOf="@id/kuaiShouImg"
+        android:layout_width="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="32dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/kuaiShouImg"
+        android:src="@drawable/kuaishou"
+        app:layout_constraintEnd_toStartOf="@id/gameTv"
+        android:layout_width="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="32dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/gameTv"
+        android:text="游戏入口"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="14sp"
+        android:layout_marginEnd="16dp"
+        android:tag="Black"
+        android:gravity="center"
+        android:background="@drawable/zima_e_app_gray_900_storke_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#0A0A0A"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
